@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&display=swap"
+        rel="stylesheet">
+    <!-- Signature -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-card">
+        <button type="button" class="theme-btn" aria-label="Toggle dark mode">
+            <img id="dark-icon" class="theme-img" src="./dark-mode icon.png" alt="dark-icon">
+            <img id="light-icon" class="theme-img" src="./light-mode icon.png" alt="light-icon">
+        </button>
+    </div>
+
+    <div class="convertor-card">
+        <section id="card-header">
+            <h2>Metric / Imperial Unit Convertor</h2>
+            <input type="number" id="input-unit">
+            <button type="button" id="convert-btn">Convert</button>
+            <div id="error-message"></div>
+        </section>
+        <section id="card-body">
+            <div class="unit-group">
+                <h3>Length (Metric/Feet)</h3>
+                <p id="convert-length"></p>
+            </div>
+            <div class="unit-group">
+                <h3>Volume (Liters/Gallons)</h3>
+                <p id="convert-volume"></p>
+            </div>
+            <div class="unit-group">
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p id="convert-mass"></p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h4>Designed & Created By:</h4>
+        <a href="https://github.com/BiruMJ" id="developer">Biru Basfore</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
